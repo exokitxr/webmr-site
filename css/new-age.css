@@ -158,6 +158,8 @@ header.masthead {
 }
 
 header.masthead .header-content {
+  display: flex;
+  flex-direction: column;
   max-width: 500px;
   margin-bottom: 100px;
   text-align: center;
@@ -430,6 +432,11 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .btn-xl {
+  display: inline-flex;
+  margin: 10px 0;
+  margin-right: 10px;
+  height: 54px;
   font-size: 13px;
   padding: 15px 45px;
+  align-items: center;
 }
