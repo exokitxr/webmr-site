@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/modulesio/webmr-site/issues"
   },
-  "homepage": "https://github.com/modulesio/webmr-site#readme"
+  "homepage": "https://github.com/modulesio/webmr-site#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
