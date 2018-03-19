@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -21,13 +20,5 @@ module.exports = {
     new webpack.DefinePlugin({
       '__REACT_DEVTOOLS_GLOBAL_HOOK__': '({ isDisabled: true })'
     }),
-  ].concat(
-    process.argv.indexOf('-p') === -1 ? [] : [
-      new UglifyJsPlugin({
-        uglifyOptions: {
-          comments: false
-        },
-      }),
-    ]
-  ),
+  ],
 };
