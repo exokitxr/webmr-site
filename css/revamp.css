@@ -51,8 +51,15 @@ header.masthead {
 }
 
 .hero-intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: absolute;
     top: 0;
@@ -106,8 +113,11 @@ header.masthead .code::before {
     background-size: 24px 24px;
     background-position: center top;
     background-repeat: no-repeat;
+    -webkit-animation: opacitySwell 2.0s;
     animation: opacitySwell 2.0s;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
 
@@ -192,7 +202,11 @@ header.masthead .code::before {
 }
 
 .logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 40px;
 }
@@ -217,8 +231,15 @@ header.masthead .code::before {
 .plus {
     width: 60px;
     height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     font-size: 30px;
 }
@@ -240,8 +261,15 @@ header.masthead .code::before {
 }
 
 .figure-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -256,8 +284,13 @@ header.masthead .code::before {
 }
 
 .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -306,7 +339,10 @@ section.features .section-heading {
 }
 
 .os-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-bottom: 60px;
 }
@@ -494,8 +530,15 @@ section.cta a {
     #how-it-works {
         min-height: 100vh;
         padding: 0 0 0 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -511,6 +554,15 @@ section.cta a {
 @media (min-width: 1080px) {
     section.cta {
         overflow: hidden;
+    }
+}
+
+@-webkit-keyframes opacitySwell {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.65;
     }
 }
 
