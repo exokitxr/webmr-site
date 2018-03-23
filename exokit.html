@@ -23,7 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/new-age.css" rel="stylesheet">
-
+    <link href="css/revamp.css" rel="stylesheet" />
   </head>
 
   <body id="page-top">
@@ -53,29 +53,40 @@
     </nav>
 
     <header class="masthead" style="overflow: hidden;">
-      <div class="container h-100">
-        <div class="row" style="height: 70%;">
-          <div class="col-lg-7 my-auto">
-            <div class="header-content mx-auto">
-              <h1 class="mb-5">Exokit is a browser from the future.<br>It runs virtual worlds and can't draw HTML.</h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger"><i class="fab fa-windows" style="margin-right: 10px; font-size: 20px;"></i> Windows</a>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger"><i class="fab fa-apple" style="margin-right: 10px; font-size: 20px;"></i> macOS</a>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger"><i class="fab fa-linux" style="margin-right: 10px; font-size: 20px;"></i> Linux</a>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger"><i class="fab fa-github" style="margin-right: 10px; font-size: 20px;"></i> Get the code</a>
-            </div>
-          </div>
-          <div class="col-lg-5 my-auto">
-            <img src="img/exokit-logo.png" class="img-fluid" alt="">
-          </div>
-        </div>
-        <div style="display: flex; height: 30%; margin: 0 -100%; background-color: #1118; justify-content: center;">
-          <div class="container">
-            <div class="row">
-              <pre style="margin: 0; color: #FFF; padding: 15px;"><code><span style="user-select: none;">$ </span>npm install exokit</code></pre>
-            </div>
-          </div>
-        </div>
+      <div class="masthead-cover"></div>
+      <div class="container h-100 hero-intro">
+        <!--<div class="row" style="height: 70%;">-->
+          <!--<div class="col-lg-12 my-auto">-->
+            <!--<div class="row header-content mx-auto">-->
+              <h1 class="headline">Exokit is a browser from the future.
+                <br />
+                <span>It runs virtual worlds and can't draw HTML.</span>
+              </h1>
+              <div class="tag">
+                <pre class="code">npm install exokit</pre>
+              </div>
+              <!--<div class="col-sm-12">-->
+                <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12"><i class="fab fa-windows" style="margin-right: 10px; font-size: 20px;"></i> Windows</a>-->
+                <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12"><i class="fab fa-apple" style="margin-right: 10px; font-size: 20px;"></i> macOS</a>-->
+                <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12"><i class="fab fa-linux" style="margin-right: 10px; font-size: 20px;"></i> Linux</a>-->
+                <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12"><i class="fab fa-github" style="margin-right: 10px; font-size: 20px;"></i> Get the code</a>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="col-lg-5 my-auto">-->
+            <!--<img src="img/exokit-logo.png" class="img-fluid" alt="">-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div style="display: flex; height: 30%; margin: 0 -100%; background-color: #1118; justify-content: center;">-->
+          <!--<div class="container">-->
+            <!--<div class="row">-->
+              <!--<pre style="margin: 0; color: #FFF; padding: 15px;"><code><span style="user-select: none;">$ </span>npm install exokit</code></pre>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
       </div>
+      <a href="#how-it-works" class="teaser" id="teaser">
+      </a>
     </header>
 
     <section class="download bg-primary text-center" id="how-it-works">
@@ -84,50 +95,32 @@
           <div class="col-md-6" style="text-align: left;">
             <h2 class="section-heading bg-primary" style="margin-bottom: 30px;">How it works</h2>
             <p style="font-size: 20px;">Exokit is the opposite of a web browser.</p>
-            <p style="font-size: 20px;">Most web browsers run web sites. But Exokit lets the site run the browser! It's an <b>exobrowser</b>!</p>
+            <p style="font-size: 20px;">Most web browsers run web sites. But Exokit lets the site run the browser! It's an <strong>exobrowser</strong>!</p>
             <p style="font-size: 20px;">Exokit is just Javascript, so it can be changed by a site.</p>
             <p style="font-size: 20px;">More importantly, Exokit is native. <b>So, Exokit executes web sites natively.</b></p>
             <p style="font-size: 20px;">This makes Exokit <b>fast</b>. And perfect for Mixed Reality on the web.</p>
             <p style="font-size: 20px;">The catch? Exokit can't draw HTML.</p>
-            <a href="#download" class="btn btn-outline btn-xl">Learn more</a>
-          </div>
-          <div class="col-md-6" style="display: flex; font-size: 20px; perspective: 800px; perspective-origin: 50% 100%; flex-direction: column; align-items: center;">
-            <div style="display: flex; width: 400px; height: 400px; margin-bottom: -100px; transform: rotateX(40deg) rotateZ(45deg); z-index: 2;">
-              <div style="display: flex; background: #03a9f4; margin-right: 10px; justify-content: center; align-items: center; flex: 2;"><i class="fas fa-user" style="font-size: 50px;"></i></div>
-              <div style="display: flex; font-size: 24px; flex-direction: column; flex: 1;">
-                <div style="display: flex; background: #03a9f4; margin-bottom: 10px; justify-content: center; align-items: center; flex: 1;">VR</div>
-                <div style="display: flex; background: #03a9f4; margin-bottom: 10px; justify-content: center; align-items: center; flex: 1;">AR</div>
-                <div style="display: flex; background: #03a9f4; justify-content: center; align-items: center; flex: 1;">SH</div>
-              </div>
-            </div>
-            <div style="position: absolute; top: 264px; left: 200px; width: 3px; height: 216px; background: #111; z-index: 1;"></div>
-            <div style="position: absolute; top: 245px; left: 379px; width: 5px; height: 269px; background: #111; z-index: 1;"></div>
-            <div style="position: absolute; top: 499px; left: 218px; width: 70px; height: 7px; background: #111; transform: rotateX(40deg) rotateZ(45deg); z-index: 1;"></div>
-            <div style="position: absolute; top: 490px; left: 226px; width: 4px; height: 30px; background: #111; z-index: 1;"></div>
-            <div style="position: absolute; top: 517px; left: 275px; width: 5px; height: 30px; background: #111; z-index: 1;"></div>
-            <div style="position: relative; display: flex; width: 400px; height: 400px; padding: 30px; transform: rotateX(40deg) rotateZ(45deg); flex-direction: column; z-index: 0;">
-              <div style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; border: 30px solid #333;"></div>
-              <div style="display: flex; position: absolute; top: 0; left: 0; width: 100%; line-height: 30px; justify-content: center;">Jail</div>
-              <div style="display: flex; height: 100%; padding: 10px;">
-                <div style="margin-right: 10px; padding: 10px; background: #3f51b5; flex: 1;">
-                  <pre style="display: block; color: #FFF; font-size: 14px; text-align: left;"><code>&lt;html&gt;<br>  &lt;script&gt;<br>    enterVR();<br>    gl.render();<br>  &lt;/script&gt;<br>  &lt;canvas&gt;<br>  &lt;video&gt;<br>  &lt;audio&gt;<br>&lt;/html&gt;</code></pre>
-                </div>
-                <div style="display: flex; flex-direction: column; flex: 1;">
-                  <div style="display: flex; margin-bottom: 10px; background: #4caf50; justify-content: center; align-items: center; flex: 1;">Node.js</div>
-                  <div style="display: flex; margin-bottom: 10px; background: #4caf50; justify-content: center; align-items: center; flex: 1;">NPM</div>
-                  <div style="display: flex; background: #e91e63; justify-content: center; align-items: center; flex: 2;">Exokit</div>
-                </div>
-              </div>
-            </div>
+            <a href="#download" class="btn btn-outline btn-xl download-btn" id="learn-more">Learn more</a>
           </div>
         </div>
       </div>
     </section>
 
+    <section class="download" id="exploded-graphic">
+      <div class="col-md-6">
+        <h2 class="section-heading bg-secondary">Mixed Reality for Node</h2>
+        <p></p>
+      </div>
+      <figure class="figure exploded">
+        <img src="img/exploded.png" alt="Exokit Exploded View" />
+      </figure>
+    </section>
+
     <section class="download bg-secondary text-center" id="download">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <h2 class="section-heading bg-secondary">Supports the standards</h2>
+          <div class="features">
             <div class=feature><i class="fas fa-laptop"></i><span>HTTP/S</span></div>
             <div class=feature><i class="fab fa-node-js"></i><span>Node.js</span></div>
             <div class=feature><i class="fab fa-npm"></i><span>NPM</span></div>
@@ -138,10 +131,6 @@
             <div class=feature><i class="fas fa-wrench"></i><span>WebWorkers</span></div>
             <div class=feature><i class="fas fa-tty"></i><span>WebRTC</span></div>
           </div>
-          <div class="col-md-6">
-            <h2 class="section-heading bg-secondary">Supports the standards</h2>
-            <p></p>
-          </div>
         </div>
       </div>
     </section>
@@ -149,62 +138,19 @@
     <section class="features" id="features">
       <div class="container">
         <div class="section-heading text-center">
-          <h2>Unlimited Features, Unlimited Fun</h2>
-          <p class="text-muted">Check out what you can do with this app theme!</p>
-          <hr>
+          <h2>Any OS</h2>
         </div>
         <div class="row">
-          <div class="col-lg-4 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="col-sm-12 os-wrapper">
+          <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12 platform-btn"><i class="fab fa-windows" style="margin-right: 10px; font-size: 20px;"></i> Windows</a>-->
+          <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12 platform-btn"><i class="fab fa-apple" style="margin-right: 10px; font-size: 20px;"></i> macOS</a>-->
+          <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12 platform-btn"><i class="fab fa-linux" style="margin-right: 10px; font-size: 20px;"></i> Linux</a>-->
+            <p><i class="fab fa-windows"></i> <span class="os">Windows</span></p>
+            <p><i class="fab fa-apple"></i> <span class="os">macOS</span></p>
+            <p><i class="fab fa-linux"></i> <span class="os">Linux</span></p>
           </div>
-          <div class="col-lg-8 my-auto">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-screen-smartphone text-primary"></i>
-                    <h3>Device Mockups</h3>
-                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-camera text-primary"></i>
-                    <h3>Flexible Use</h3>
-                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-present text-primary"></i>
-                    <h3>Free to Use</h3>
-                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-lock-open text-primary"></i>
-                    <h3>Open Source</h3>
-                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <a href="https://github.com/webmixedreality/exokit" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12 platform-btn"><i class="fab fa-github" style="margin-right: 10px; font-size: 20px;"></i> Get the code</a>
+
         </div>
       </div>
     </section>
@@ -213,7 +159,7 @@
       <div class="cta-content">
         <div class="container">
           <h2>Stop waiting.<br>Start building.</h2>
-          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+          <a href="https://github.com/webmixedreality/exokit" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
         </div>
       </div>
       <div class="overlay"></div>
@@ -270,7 +216,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/new-age.min.js"></script>
-
+    <script src="js/ui.js"></script>
   </body>
 
 </html>

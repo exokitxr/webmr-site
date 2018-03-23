@@ -1,0 +1,255 @@
+#mainNav .navbar-brand {
+    color: transparent;
+    background-image: url('../img/exokit.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:active {
+    color: transparent;
+}
+
+header.masthead {
+    background-image: url('../img/sun_earth_mobile.png');
+    background-size: cover;
+    background-position: 25% center;
+    background-repeat: no-repeat;
+    color: #343434;
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+}
+
+.masthead-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.hero-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 56px 40px 0;
+}
+
+header.masthead .header-content {
+    max-width: 100%;
+}
+
+header.masthead .headline {
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+header.masthead h1 span {
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 1.4rem;
+}
+
+header.masthead .code {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 40px;
+}
+
+header.masthead .code::before {
+    display: inline-block;
+    content: '$ ';
+    color: #ffffff;
+}
+
+.teaser {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+    text-align: center;
+    height: 34px;
+    background-image: url('../img/more.svg');
+    background-size: 24px 24px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    animation: opacitySwell 2.0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.teaser a {
+    color: #ffffff;
+}
+
+#how-it-works, #download {
+    padding: 100px 0 85px;
+}
+
+#how-it-works h2, #how-it-works p, #download h2 {
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+}
+
+#how-it-works h2, #download h2, #features h2 {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 60px;
+    background: transparent;
+    background-color: transparent !important;
+}
+
+.download-btn {
+    margin: 40px 0 0;
+    display: block;
+    width: 200px;
+    padding-top: 18px;
+}
+
+#how-it-works .container {
+    padding: 0 40px;
+}
+
+#exploded-graphic {
+    padding: 100px 0 85px;
+}
+
+#exploded-graphic h2 {
+    background: transparent;
+    background-color: transparent !important;
+    color: #434343;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.figure, .figure img {
+    max-width: 100%;
+}
+
+.exploded {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature {
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+
+section.features .section-heading {
+    margin-bottom: 0;
+}
+
+#download h2, #features h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+#features h2 {
+    margin-bottom: 60px;
+}
+
+.platform-btn {
+    border-color: #434343;
+    color: #434343;
+    width: auto;
+    margin: 0 auto;
+}
+
+#features p {
+    /*width: 100%;*/
+    text-align: center;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+
+#features p i {
+    font-size: 40px;
+}
+
+.os-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.os {
+    display: none;
+}
+
+section.cta {
+    background-image: url('../img/night_garden_still.png');
+    padding-left: 40px;
+    padding-right: 40px;
+    background-position: 85% center;
+    background-repeat: no-repeat;
+}
+
+section.cta h2 {
+    width: 100%;
+    text-align: center;
+}
+
+section.cta a {
+    display: block;
+    margin: 40px auto 0;
+    width: 290px;
+    padding-top: 18px;
+}
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+    border-color: white;
+    background-color: rgba(255,255,255,0.3);
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 992px) {
+    .hide-for-lg {
+        display: none;
+    }
+
+    #mainNav .navbar-brand {
+        background-image: url('../img/exokit_light.png');
+    }
+
+    header.masthead {
+        background-image: url('../img/sun_earth.gif');
+    }
+
+    section.cta {
+        background-image: url('../img/night_garden_comp.gif');
+    }
+}
+
+@keyframes opacitySwell {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.65;
+    }
+}
