@@ -232,6 +232,7 @@ section.cta {
     padding-right: 40px;
     background-position: 85% center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 section.cta h3 {
