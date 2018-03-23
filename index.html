@@ -1,18 +1,207 @@
-<!doctype html>
-<html>
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Lato';
-    }
-  </style>
-</head>
-<body>
-  <div id="root"></div>
-  <script src="/build/bundle.js"></script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Exokit</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.css" rel="stylesheet">
+    <link href="css/revamp.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Exokit</a>
+        <a class="slack-badge-bar nav-link js-scroll-trigger hide-for-lg" href="https://exoslack.now.sh" target="_blank">Join the Slack</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#how-it-works">About</a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" class="nav-link js-scroll-trigger" href="https://github.com/webmixedreality/exokit">Github</a>
+            </li>
+            <li class="nav-item">
+              <a class="slack-badge nav-link js-scroll-trigger" href="https://exoslack.now.sh" target="_blank">Join the Slack</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead" style="overflow: hidden;">
+      <video autoplay muted loop id="sun-earth">
+        <source src="https://i.imgur.com/Yt8HIEw.mp4" type="video/mp4">
+      </video>
+      <div class="masthead-cover"></div>
+      <div class="container h-100 hero-intro">
+        <h1 class="headline">Exokit is a browser from the future.
+          <br />
+          <span>It runs virtual worlds and can't draw HTML.</span>
+        </h1>
+        <div class="tag">
+          <pre class="code">npm install -g exokit</pre>
+        </div>
+      </div>
+      <a href="#how-it-works" class="teaser" id="teaser">
+      </a>
+    </header>
+
+    <section class="download bg-primary text-center" id="how-it-works">
+      <div class="container">
+        <div class="row">
+          <div class="how" style="text-align: left;">
+            <h2 class="section-heading bg-primary" style="margin-bottom: 30px;">How it works</h2>
+            <p style="font-size: 20px;">Exokit is the opposite of a web browser.</p>
+            <p style="font-size: 20px;">Most web browsers run web sites. But Exokit lets the site run the browser! It's an <strong>exobrowser</strong>!</p>
+            <p style="font-size: 20px;">Exokit is just Javascript, so it can be changed by a site.</p>
+            <p style="font-size: 20px;">More importantly, Exokit is native. <b>So, Exokit executes web sites natively.</b></p>
+            <p style="font-size: 20px;">This makes Exokit <b>fast</b>. And perfect for Mixed Reality on the web.</p>
+            <p style="font-size: 20px;">The catch? Exokit can't draw HTML.</p>
+            <a href="#download" class="btn btn-outline btn-xl download-btn" id="learn-more">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="download" id="exploded-graphic">
+      <div>
+        <h2 class="section-heading bg-secondary">Mixed Reality for Node</h2>
+        <p></p>
+      </div>
+      <figure class="figure exploded">
+        <img src="img/exploded.png" alt="Exokit Exploded View" />
+      </figure>
+    </section>
+
+    <section class="download bg-secondary text-center" id="download">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-heading bg-secondary">Supports the standards</h2>
+          <div class="features">
+            <div class=feature><i class="fas fa-laptop"></i><span>HTTP/S</span></div>
+            <div class=feature><i class="fab fa-node-js"></i><span>Node.js</span></div>
+            <div class=feature><i class="fab fa-npm"></i><span>NPM</span></div>
+            <div class=feature><i class="fas fa-pencil-alt"></i><span>WebGL</span></div>
+            <div class=feature><i class="fas fa-volume-up"></i><span>WebAudio</span></div>
+            <div class=feature><i class="fab fa-first-order"></i><span>WebVR</span></div>
+            <div class=feature><i class="fas fa-plug"></i><span>WebSockets</span></div>
+            <div class=feature><i class="fas fa-wrench"></i><span>WebWorkers</span></div>
+            <div class=feature><i class="fas fa-tty"></i><span>WebRTC</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Any OS</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 os-wrapper">
+          <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12 platform-btn"><i class="fab fa-windows" style="margin-right: 10px; font-size: 20px;"></i> Windows</a>-->
+          <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12 platform-btn"><i class="fab fa-apple" style="margin-right: 10px; font-size: 20px;"></i> macOS</a>-->
+          <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12 platform-btn"><i class="fab fa-linux" style="margin-right: 10px; font-size: 20px;"></i> Linux</a>-->
+            <p><i class="fab fa-windows"></i> <span class="os">Windows</span></p>
+            <p><i class="fab fa-apple"></i> <span class="os">macOS</span></p>
+            <p><i class="fab fa-linux"></i> <span class="os">Linux</span></p>
+          </div>
+          <a href="https://github.com/webmixedreality/exokit" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger platform-btn"><i class="fab fa-github" style="margin-right: 10px; font-size: 20px;"></i> Get the code</a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <video autoplay muted loop id="night-garden">
+        <source src="https://i.imgur.com/Q7GwFMY.mp4" type="video/mp4">
+      </video>
+      <div class="cta-content">
+        <div class="container">
+          <h3>Stop waiting.<br>Start building.</h3>
+          <a href="https://github.com/webmixedreality/exokit" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
+
+    <section class="contact bg-primary" id="contact">
+      <div class="container">
+        <h2>We
+          <i class="fa fa-heart"></i>
+          new friends!</h2>
+        <ul class="list-inline list-social">
+          <li class="list-inline-item social-slack">
+            <a target="_blank" class="slack" href="https://exoslack.now.sh">
+            </a>
+            Join the Slack
+          </li>
+          <li class="list-inline-item social-github">
+            <a href="https://github.com/webmixedreality/exokit" target="_blank" class="github">
+            </a>
+            Contribute
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="attributions">
+          "<a rel="nofollow" class="external text" href="https://poly.google.com/view/dRbgMKxXbv6" target="_blank">The sun and earth</a>" by <a rel="nofollow" target="_blank" class="external text" href="https://poly.google.com/user/1hcF2rPTi6a">Agent55534</a> is licensed under <a rel="nofollow" target="_blank" class="external text" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
+          <br />
+          "<a rel="nofollow" class="external text" target="_blank" href="https://poly.google.com/view/2jArjWIaygh">Night garden</a>" by <a rel="nofollow" class="external text" target="_blank" href="https://poly.google.com/user/bp-9BfaV7x8">papilioblue 1</a> is licensed under <a rel="nofollow" class="external text" target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
+        </div>
+        <p>&copy; Website Copyright 2018. All Rights Reserved.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Privacy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Terms</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
+    <script src="js/ui.js"></script>
+  </body>
+
 </html>
