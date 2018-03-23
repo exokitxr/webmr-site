@@ -394,6 +394,12 @@ section.cta a {
     }
 }
 
+@media (min-width: 1080px) {
+    section.cta {
+        overflow: hidden;
+    }
+}
+
 @keyframes opacitySwell {
     0% {
         opacity: 0.4;
