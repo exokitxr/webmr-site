@@ -77,13 +77,17 @@ header.masthead h1 span {
 header.masthead .code {
     color: #ffffff;
     text-align: center;
-    margin-top: 40px;
+    background: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    margin: 40px auto 0;
 }
 
 header.masthead .code::before {
     display: inline-block;
     content: '$ ';
-    color: #ffffff;
+    color: #8e8e8e;
 }
 
 .teaser {
@@ -322,6 +326,7 @@ section.cta a {
 
     header.masthead .code {
         font-size: 100%;
+        width: 280px;
     }
 
     .how {
