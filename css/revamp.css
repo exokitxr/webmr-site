@@ -179,7 +179,7 @@ header.masthead .code::before {
 .tables h4 {
     padding: 10px 0 6px;
     font-size: 20px;
-    border-bottom: 1px solid #434343;
+    /*border-bottom: 1px solid #434343;*/
     margin-bottom: 0;
 }
 
@@ -195,6 +195,10 @@ header.masthead .code::before {
 
 .connector {
     margin-bottom: 20px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .with-magic p {
