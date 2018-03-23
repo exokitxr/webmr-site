@@ -1,3 +1,7 @@
+.show-for-medium {
+    display: none;
+}
+
 #mainNav .navbar-brand {
     color: transparent;
     background-image: url('../img/exokit.png');
@@ -121,7 +125,7 @@ header.masthead .code::before {
     letter-spacing: 0.03em;
 }
 
-#how-it-works h2, #download h2, #features h2 {
+#how-it-works h2, #download h2, #features h2, #what-is h2 {
     font-size: 1.8rem;
     text-transform: capitalize;
     font-weight: 400;
@@ -137,8 +141,86 @@ header.masthead .code::before {
     padding-top: 18px;
 }
 
-#how-it-works .container {
+#how-it-works .container, #what-is .container {
     padding: 0 40px;
+}
+
+#what-is h2 {
+    color: #434343;
+}
+
+#what-is {
+    background-color: #ffffff !important;
+    background: #ffffff;
+    color: #434343;
+}
+
+#what-is .with-magic {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    display: block;
+}
+
+.tables {
+    margin-top: 80px;
+}
+
+.tables h4 {
+    padding: 10px 0 6px;
+    font-size: 20px;
+    border-bottom: 1px solid #434343;
+    margin-bottom: 0;
+}
+
+#what-is .table {
+    border: 1px solid #434343;
+    border-radius: 3px;
+    padding: 0;
+}
+
+#what-is .table img {
+    max-width: 100%;
+}
+
+.connector {
+    margin-bottom: 20px;
+}
+
+.with-magic p {
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.xo, .leaper {
+    background-size: cover;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.xo {
+    background-image: url('../img/xo.png');
+}
+
+.leaper {
+    background-image: url('../img/leaper.png');
+}
+
+.plus {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
 }
 
 #exploded-graphic {
@@ -157,13 +239,20 @@ header.masthead .code::before {
     width: 100%;
 }
 
+.figure-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .figure, .figure img {
     max-width: 100%;
 }
 
 .exploded {
     width: 80%;
-    margin: 0 10%;
+    margin: 40px 0;
+    max-width: 360px;
 }
 
 .features {
@@ -317,6 +406,18 @@ section.cta a {
 }
 
 @media (min-width: 768px) {
+    .show-for-medium {
+        display: initial;
+    }
+
+    .hide-for-medium {
+        display: none;
+    }
+
+    .tables {
+        padding-left: calc(100% / 12);
+    }
+
     header.masthead .headline {
         font-size: 2.2rem;
     }
@@ -330,13 +431,20 @@ section.cta a {
         width: 280px;
     }
 
+    #how-it-works .container {
+        max-width: 1200px;
+    }
+
+    #what-is .container {
+        padding: 0 0;
+    }
+
     .how {
         max-width: 600px;
     }
 
     .figure.exploded {
         margin-left: auto;
-        margin-right: auto;
         max-width: 600px;
         display: block;
     }

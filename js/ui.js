@@ -1,7 +1,7 @@
 (function() {
   function addListeners() {
     var teaser = $('#teaser');
-    var howItWorks = $('#how-it-works');
+    var howItWorks = $('#what-is');
     var exploded = $('#exploded-graphic');
     var learnMore = $('#learn-more');
 
