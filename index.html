@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>ExoKit</title>
+    <title>Exokit</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -14,7 +14,7 @@
     <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="vendor/font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
@@ -24,6 +24,9 @@
     <!-- Custom styles for this template -->
     <link href="css/new-age.css" rel="stylesheet">
     <link href="css/revamp.css" rel="stylesheet" />
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>-->
+    <!--<script src="vendor/scrollmagic/ScrollMagic.min.js"></script>-->
+    <!--<script src="vendor/scrollmagic/plugins/animation.gsap.min.js"></script>-->
   </head>
 
   <body id="page-top">
@@ -31,7 +34,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">ExoKit</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Exokit</a>
         <a class="slack-badge-bar nav-link js-scroll-trigger hide-for-lg" href="https://exoslack.now.sh" target="_blank">Join the Slack</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -40,7 +43,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#how-it-works">About</a>
+              <a class="nav-link js-scroll-trigger" href="#what-is">About</a>
             </li>
             <li class="nav-item">
               <a target="_blank" class="nav-link js-scroll-trigger" href="https://github.com/webmixedreality/exokit">Github</a>
@@ -59,15 +62,14 @@
       </video>
       <div class="masthead-cover"></div>
       <div class="container h-100 hero-intro">
-        <h1 class="headline">ExoKit is a browser from the future.
+        <h1 class="headline">Exokit is a browser from the future.
           <br />
-          <span>It runs virtual worlds and can't draw HTML.</span>
+          <span>It runs virtual worlds and works everywhere your web code does.</span>
         </h1>
         <div class="tag">
-          <pre class="code">npm install -g exokit</pre>
-        </div>
-        <div class="tag">
-          <pre class="code">exokit <a href="http://zeovr.io">http://zeovr.io</a></pre>
+          <pre class="code">
+<span id="code-install">npm install -g exokit</span>
+<span id="code-run">exokit <a href="http://zeovr.io">http://zeovr.io</a></span></pre>
         </div>
       </div>
       <a href="#how-it-works" class="teaser" id="teaser">
@@ -76,103 +78,137 @@
 
     <section class="download bg-primary text-center" id="what-is">
       <div class="container">
-        <h2 class="section-heading bg-primary" style="margin-bottom: 30px;">Bringing Magic Leap to the Web</h2>
-        <div class="logos">
-          <a href="http://webmr.io/" target="_blank" class="xo"></a>
-          <span class="plus">+</span>
-          <a href="https://www.magicleap.com/creator" target="_blank" class="leaper"></a>
-        </div>
+        <h2 class="section-heading bg-primary">What's it do?</h2>
         <div class="row">
-          <div class="with-magic" style="text-align: left;">
-            <!--<h2 class="section-heading bg-primary" style="margin-bottom: 30px;">Build Websites for Magic Leap</h2>-->
-            <p style="font-size: 20px;">ExoKit is a mixed reality web browser that natively runs WebVR web sites in OpenGL, exposing Magic Leap's SDK as a Javascript API.</p>
+          <div class="intro">
+            <p>
+              <span>Exokit is a fast, full HTML5 web browser, written as a Node.js module.</span>
+
+              <span>It supports all the standard browser APIs and accepts keyboard, mouse, and mixed-reality input.</span>
+
+              <span>Actually, Exokit can do everything a browser can do -- except render HTML (mostly).</span>
+            </p>
           </div>
         </div>
-        <div class="tables row">
-          <div class="col-sm-12 col-md-5 node-table table">
-            <h4>Node</h4>
-          </div>
-          <div class="connector col-sm-12 col-md-1">
-            <span class="hide-for-medium">&updownarrow;</span>
-            <span class="show-for-medium">&leftrightarrow;</span>
-          </div>
-          <div class="col-sm-12 col-md-5 ml-table table">
-            <h4>Magic Leap SDK</h4>
+        <hr class="line" />
+        <h2 class="section-heading bg-primary">What can I build?</h2>
+        <div class="row">
+          <div class="intro build">
+            <p>
+              <span>Exokit can't render HTML, but it can draw Canvas and WebGL -- natively, and fast.</span>
+
+              <span><span class="xbold">This means you can code robust AR and VR experiences using your favorite flavor of JavaScript, just like you code a website.</span></span>
+
+              <span id="logos-trigger">Under the hood, everything is plain OpenGL, so it plays nice with Windows, Linux, macOS, iOS, Android, and even Magic Leap.</span>
+            </p>
           </div>
         </div>
+        <div class="logos" id="logos">
+          <span class="platform xo" id="logo1"></span>
+          <span class="platform leaper" id="logo2"></span>
+          <span class="platform windows" id="logo3"></span>
+          <span class="platform apple" id="logo4"></span>
+          <span class="platform linux" id="logo5"></span>
+          <span class="platform android" id="logo6"></span>
+        </div>
+        <a href="https://github.com/webmixedreality/exokit" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger platform-btn"><i class="fab fa-github" style="margin-right: 10px; font-size: 20px;"></i> Get the code</a>
       </div>
     </section>
-
-    <section class="download bg-primary text-center" id="how-it-works">
-      <div class="container">
-        <div class="row">
-          <div class="how col-sm-12 col-md-6" style="text-align: left;">
-            <h2 class="section-heading bg-primary" style="margin-bottom: 30px;">How it works</h2>
-            <p style="font-size: 20px;">ExoKit is the opposite of a web browser.</p>
-            <p style="font-size: 20px;">Most web browsers run web sites. But ExoKit lets the site run the browser! It's an <strong>exobrowser</strong>!</p>
-            <p style="font-size: 20px;">ExoKit is just Javascript, so it can be changed by a site.</p>
-            <p style="font-size: 20px;">More importantly, ExoKit is native. <b>So, ExoKit executes web sites natively.</b></p>
-            <p style="font-size: 20px;">This makes ExoKit <b>fast</b>. And perfect for Mixed Reality on the web.</p>
-            <p style="font-size: 20px;">The catch? ExoKit can't draw HTML.</p>
-            <a href="#download" class="btn btn-outline btn-xl download-btn" id="learn-more">Learn more</a>
-          </div>
-          <div class="col-sm-12 col-md-6 figure-wrapper">
-            <figure class="figure exploded">
-              <img src="img/exploded.png" alt="ExoKit Exploded View" />
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--<section class="download" id="exploded-graphic">-->
-      <!--<div>-->
-        <!--<h2 class="section-heading bg-secondary">Mixed Reality for Node</h2>-->
-        <!--<p></p>-->
-      <!--</div>-->
-      <!--<figure class="figure exploded">-->
-        <!--<img src="img/exploded.png" alt="ExoKit Exploded View" />-->
-      <!--</figure>-->
-    <!--</section>-->
 
     <section class="download bg-secondary text-center" id="download">
       <div class="container">
         <div class="row">
-          <h2 class="section-heading bg-secondary">Supports the standards</h2>
-          <div class="features">
-            <div class=feature><i class="fas fa-laptop"></i><span>HTTP/S</span></div>
-            <div class=feature><i class="fab fa-node-js"></i><span>Node.js</span></div>
-            <div class=feature><i class="fab fa-npm"></i><span>NPM</span></div>
-            <div class=feature><i class="fas fa-pencil-alt"></i><span>WebGL</span></div>
-            <div class=feature><i class="fas fa-volume-up"></i><span>WebAudio</span></div>
-            <div class=feature><i class="fab fa-first-order"></i><span>WebVR</span></div>
-            <div class=feature><i class="fas fa-plug"></i><span>WebSockets</span></div>
-            <div class=feature><i class="fas fa-wrench"></i><span>WebWorkers</span></div>
-            <div class=feature><i class="fas fa-tty"></i><span>WebRTC</span></div>
-          </div>
+          <h2 class="section-heading bg-primary">But can we say something in list format?</h2>
+          <p>You bet. Some examples of what Exokit can do:</p>
+          <ul>
+            <li>Load any http(s) site</li>
+            <li>Parse a programmatic DOM</li>
+            <li>Run any &lt;script&gt;</li>
+            <li>Load any &lt;image&gt;, &lt;video&gt;, &lt;audio&gt;</li>
+            <li>Register and run Web Workers</li>
+            <li>Render Canvas2D</li>
+            <li>Render WebGL</li>
+            <li>Render WebVR</li>
+            <li>Handle gamepad input</li>
+            <li>Iframe isolation</li>
+            <li>Embed anywhere with node</li>
+            <li>Run on Android/iOS</li>
+            <li>Run tests</li>
+            <li>Power a web bot</li>
+          </ul>
+          <!--<h2 class="section-heading bg-secondary">Supports the standards</h2>-->
+          <!--<div class="features">-->
+            <!--<div class=feature><i class="fas fa-laptop"></i><span>HTTP/S</span></div>-->
+            <!--<div class=feature><i class="fab fa-node-js"></i><span>Node.js</span></div>-->
+            <!--<div class=feature><i class="fab fa-npm"></i><span>NPM</span></div>-->
+            <!--<div class=feature><i class="fas fa-pencil-alt"></i><span>WebGL</span></div>-->
+            <!--<div class=feature><i class="fas fa-volume-up"></i><span>WebAudio</span></div>-->
+            <!--<div class=feature><i class="fab fa-first-order"></i><span>WebVR</span></div>-->
+            <!--<div class=feature><i class="fas fa-plug"></i><span>WebSockets</span></div>-->
+            <!--<div class=feature><i class="fas fa-wrench"></i><span>WebWorkers</span></div>-->
+            <!--<div class=feature><i class="fas fa-tty"></i><span>WebRTC</span></div>-->
+          <!--</div>-->
         </div>
       </div>
     </section>
 
-    <section class="features" id="features">
+    <section class="download bg-secondary text-center" id="api">
       <div class="container">
-        <div class="section-heading text-center">
-          <h2>Any OS</h2>
-        </div>
         <div class="row">
-          <div class="col-sm-12 os-wrapper">
-          <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12 platform-btn"><i class="fab fa-windows" style="margin-right: 10px; font-size: 20px;"></i> Windows</a>-->
-          <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12 platform-btn"><i class="fab fa-apple" style="margin-right: 10px; font-size: 20px;"></i> macOS</a>-->
-          <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12 platform-btn"><i class="fab fa-linux" style="margin-right: 10px; font-size: 20px;"></i> Linux</a>-->
-            <p><i class="fab fa-windows"></i> <span class="os">Windows</span></p>
-            <p><i class="fab fa-apple"></i> <span class="os">macOS</span></p>
-            <p><i class="fab fa-linux"></i> <span class="os">Linux</span></p>
-          </div>
-          <a href="https://github.com/webmixedreality/exokit" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger platform-btn"><i class="fab fa-github" style="margin-right: 10px; font-size: 20px;"></i> Get the code</a>
-
+          <h2 class="section-heading" style="margin-bottom: 30px;">And API support, also as a list?</h2>
+          <p>We're on it:</p>
+          <ul>
+            <li>HTTP(S)</li>
+            <li>HTML5</li>
+            <li>ES7 (Whatever Node you use)</li>
+            <li>DOM</li>
+            <li>CanvasRenderingContext2D</li>
+            <li>Image tag</li>
+            <li>Audio tag</li>
+            <li>Video tag</li>
+            <li>Keyboard events</li>
+            <li>Mouse events</li>
+            <li>WebGL</li>
+            <li>WebVR</li>
+            <li>Gamepad API</li>
+            <li><strong>No HTML layouts</strong></li>
+            <li><strong>No CSS</strong></li>
+          </ul>
+          <!--<h2 class="section-heading bg-secondary">Supports the standards</h2>-->
+          <!--<div class="features">-->
+          <!--<div class=feature><i class="fas fa-laptop"></i><span>HTTP/S</span></div>-->
+          <!--<div class=feature><i class="fab fa-node-js"></i><span>Node.js</span></div>-->
+          <!--<div class=feature><i class="fab fa-npm"></i><span>NPM</span></div>-->
+          <!--<div class=feature><i class="fas fa-pencil-alt"></i><span>WebGL</span></div>-->
+          <!--<div class=feature><i class="fas fa-volume-up"></i><span>WebAudio</span></div>-->
+          <!--<div class=feature><i class="fab fa-first-order"></i><span>WebVR</span></div>-->
+          <!--<div class=feature><i class="fas fa-plug"></i><span>WebSockets</span></div>-->
+          <!--<div class=feature><i class="fas fa-wrench"></i><span>WebWorkers</span></div>-->
+          <!--<div class=feature><i class="fas fa-tty"></i><span>WebRTC</span></div>-->
+          <!--</div>-->
         </div>
       </div>
     </section>
+
+    <!--<section class="features" id="features">-->
+      <!--<div class="container">-->
+        <!--<div class="section-heading text-center">-->
+          <!--<h2>Any OS</h2>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+          <!--<div class="col-sm-12 os-wrapper">-->
+          <!--&lt;!&ndash;<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12 platform-btn"><i class="fab fa-windows" style="margin-right: 10px; font-size: 20px;"></i> Windows</a>&ndash;&gt;-->
+          <!--&lt;!&ndash;<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12 platform-btn"><i class="fab fa-apple" style="margin-right: 10px; font-size: 20px;"></i> macOS</a>&ndash;&gt;-->
+          <!--&lt;!&ndash;<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger col-sm-12 platform-btn"><i class="fab fa-linux" style="margin-right: 10px; font-size: 20px;"></i> Linux</a>&ndash;&gt;-->
+            <!--<p><i class="fab fa-windows"></i> <span class="os">Windows</span></p>-->
+            <!--<p><i class="fab fa-apple"></i> <span class="os">macOS</span></p>-->
+            <!--<p><i class="fab fa-linux"></i> <span class="os">Linux</span></p>-->
+          <!--</div>-->
+          <!--<a href="https://github.com/webmixedreality/exokit" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger platform-btn"><i class="fab fa-github" style="margin-right: 10px; font-size: 20px;"></i> Get the code</a>-->
+
+        <!--</div>-->
+      <!--</div>-->
+    <!--</section>-->
 
     <section class="cta">
       <video autoplay muted loop playsinline id="night-garden">
