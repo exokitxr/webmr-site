@@ -112,6 +112,25 @@ header.masthead .code span::before {
     color: #8e8e8e;
 }
 
+.copier, .copier:hover, .copier:focus, .copier:active {
+    background: none;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    font-variant: small-caps;
+    font-size: 14px;
+    padding: 0 0 0 15px;
+    vertical-align: top;
+    display: none;
+    transition: color 0.4s;
+    cursor: pointer;
+}
+
+.copier.clicked {
+    color: #20c997 !important;
+    transition: none;
+}
+
 .xbold {
     font-weight: bolder;
 }
@@ -644,6 +663,10 @@ section.cta a {
 
     .hide-for-medium {
         display: none;
+    }
+
+    .copier, .copier:hover, .copier:focus, .copier:active {
+        display: initial;
     }
 
     #what-is .line {
