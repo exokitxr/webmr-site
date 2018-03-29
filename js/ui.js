@@ -37,8 +37,8 @@
   function addListeners() {
     const codeInstall = document.getElementById('code-install');
     const codeRun = document.getElementById('code-run');
-    const copyInstall = document.getElementById('copy-install');
-    const copyUse = document.getElementById('copy-use');
+    // const copyInstall = document.getElementById('copy-install');
+    // const copyUse = document.getElementById('copy-use');
     const teaser = $('#teaser');
     const howItWorks = $('#what-is');
     const exploded = $('#exploded-graphic');
@@ -52,25 +52,25 @@
       selectText(evt.target.id);
     });
 
-    copyInstall.addEventListener('click', function(evt) {
-      selectText('code-install', true);
-      copyInstall.classList.add('clicked');
-      copyInstall.innerText = String.fromCharCode(10003);
-      setTimeout(function() {
-        copyInstall.classList.remove('clicked');
-        copyInstall.innerText = 'copy';
-      }, 2000);
-    });
-
-    copyUse.addEventListener('click', function(evt) {
-      selectText('code-run', true);
-      copyUse.classList.add('clicked');
-      copyUse.innerText = String.fromCharCode(10003);
-      setTimeout(function() {
-        copyUse.classList.remove('clicked');
-        copyUse.innerText = 'copy';
-      }, 2000);
-    });
+    // copyInstall.addEventListener('click', function(evt) {
+    //   selectText('code-install', true);
+    //   copyInstall.classList.add('clicked');
+    //   copyInstall.innerText = String.fromCharCode(10003);
+    //   setTimeout(function() {
+    //     copyInstall.classList.remove('clicked');
+    //     copyInstall.innerText = 'copy';
+    //   }, 2000);
+    // });
+    //
+    // copyUse.addEventListener('click', function(evt) {
+    //   selectText('code-run', true);
+    //   copyUse.classList.add('clicked');
+    //   copyUse.innerText = String.fromCharCode(10003);
+    //   setTimeout(function() {
+    //     copyUse.classList.remove('clicked');
+    //     copyUse.innerText = 'copy';
+    //   }, 2000);
+    // });
 
     teaser.on('click', function() {
       $('html, body').animate({
