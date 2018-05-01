@@ -2,7 +2,7 @@
   "name": "webmr-site",
   "version": "0.0.1",
   "private": true,
-  "homepage": "http://webmixedreality.github.io/webmr-site",
+  "homepage": "https://exokit.webmr.io",
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
