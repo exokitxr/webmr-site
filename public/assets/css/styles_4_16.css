@@ -1,0 +1,738 @@
+@font-face {
+    font-family:'SF Pro Display';
+    src: url('../fonts/SF-Pro-Display-Regular.otf');
+}
+
+@font-face {
+    font-family:'SF Pro Display Light';
+    src: url('../fonts/SF-Pro-Display-Light.otf');
+}
+
+@font-face {
+    font-family:'SF Pro Display Thin';
+    src: url('../fonts/SF-Pro-Display-Thin.otf');
+}
+
+html, *, *::before, *::after {
+    font-family: 'SF Pro Display', 'Helvetica', 'Arial', sans-serif;
+}
+
+.show-for-medium {
+    display: none;
+}
+
+#main-nav .navbar-brand {
+    color: transparent;
+    width: 108px;
+    height: 59px;
+    margin: 0 auto;
+    background-image: url('../images/exokit@2x.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#main-nav .navbar-brand:hover, #main-nav .navbar-brand:focus, #main-nav .navbar-brand:active,
+#main-nav.navbar-shrink .navbar-brand:focus, #main-nav.navbar-shrink .navbar-brand:hover,
+#main-nav span.xo-pink, #main-nav span.xo-orange,
+#main-nav.navbar-shrink span.xo-pink, #main-nav.navbar-shrink span.xo-orange {
+    color: transparent;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and (   min--moz-device-pixel-ratio: 1.25),
+only screen and (     -o-min-device-pixel-ratio: 5/4),
+only screen and (        min-device-pixel-ratio: 1.25) {
+    #main-nav .navbar-brand {
+        width: 54px;
+        height: 40px;
+    }
+}
+
+#main-nav .navbar-brand:hover, #main-nav .navbar-brand:focus, #main-nav .navbar-brand:active,
+#main-nav.navbar-shrink .navbar-brand:focus, #main-nav.navbar-shrink .navbar-brand:hover {
+    color: transparent;
+}
+
+.slack-badge {
+    color: transparent !important;
+    background-image: url('https://exoslack.now.sh/badge.svg');
+    background-size: 87px 20px;
+    background-repeat: no-repeat;
+    background-position: center 65%;
+    width: 87px;
+    height: 23px;
+}
+
+a.slack-badge,
+a.slack-badge:focus,
+a.slack-badge:hover,
+a.slack-badge:active {
+    color: transparent;
+}
+
+.navbar-toggler:focus {
+   outline: none;
+    -webkit-appearance: none;
+}
+
+.siteNav {
+    padding-top: 10px;
+}
+
+.siteNav .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navList {
+    list-style: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navList li {
+    text-align: center;
+}
+
+.nav-link:not(.badgeItem) {
+    padding: 0 0 0 0;
+}
+
+.navItem {
+    padding: 8px;
+}
+
+.navList li a:not(.slack-badge) {
+    color: black;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-size: 18px;
+    font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
+    margin-top: -2px;
+}
+
+section {
+    height: 100vh;
+    min-height: 600px;
+    width: 100vw;
+    padding: 0 0 0 0;
+    position: relative;
+}
+
+section h2 {
+    font-size: 40px;
+    font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.titleSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    position: relative;
+    height: calc(100vh - 130px);
+}
+
+.titleSection h1 {
+    text-align: center;
+}
+
+.titleSection h1 span {
+    font-weight: 400;
+    font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#particles-js canvas {
+    height: 100%;
+    width: 100%;
+}
+
+#titleStartLinks a {
+    z-index: 999;
+}
+
+.more {
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../images/more.png');
+    background-position: center center;
+    background-size: auto 20px;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    z-index: 1000;
+}
+
+.main {
+    background: #eeeeee;
+}
+
+.hero, .intro, .detail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heroText, .introText, .detailText {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.heroText, .detailText {
+    padding: 0 60px;
+}
+
+.heroTagline, .introTagline, .detailTagline {
+    text-align: center;
+}
+
+.introTagline span {
+    font-weight: 300 !important;
+}
+
+.xo-pink, a.xo-pink, a.xo-pink:hover, a.xo-pink:focus {
+    color: #DD6F84;
+}
+
+.xo-orange {
+    color: #FF8960;
+}
+
+.xo-orange-bg {
+    background-color: #FF8960;
+}
+
+.xo-orange-dark-bg {
+    background-color: #E2603D;
+}
+
+.xo-orange-gradient {
+    background: linear-gradient(to bottom, #ffffff, #DD6F84);
+}
+
+.introTagline h1 {
+    display: inline-block;
+    text-align: center;
+    font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.035em;
+}
+
+.introTagline h1 span {
+    font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
+}
+
+.heroImage, .introImage, .detailImage {
+    width: 100%;
+    height: 60%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.heroImage {
+    background-image: url('../images/ml-lightwear.jpg');
+}
+
+/*.introImage {*/
+    /*background-image: url('../images/zeo.png');*/
+/*}*/
+
+.introImage {
+    overflow: hidden;
+}
+
+.introImage video {
+    height: 100%;
+    width: auto;
+    position: relative;
+    left: -50%;
+}
+
+.detailImage {
+    background-image: url('../images/ml-reveal.jpg');
+}
+
+.opacityMask {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, #ffffff);
+}
+
+.supporting {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 140px 40px;
+    height: auto;
+}
+
+.supportingTitle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+.platformsInner {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.platforms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.platform {
+    width: 40px;
+    height: 40px;
+    background-position: center center;
+    background-size: auto 25px;
+    background-repeat: no-repeat;
+    /*animation: floating 4s ease-in-out;*/
+    /*animation-direction: alternate;*/
+    /*animation-iteration-count: infinite;*/
+    pointer-events: none;
+}
+
+.platform.xo {
+    background-size: 35px auto;
+    background-position: center 60%;
+    background-image: url('../images/xo.svg');
+    animation-delay: -1.8s;
+}
+
+.platform.magicLeap {
+    background-image: url('../images/leaper.svg');
+}
+
+.platform.mac {
+    background-image: url('../images/mac.svg');
+    animation-delay: -1.4s;
+}
+
+.platform.windows {
+    background-image: url('../images/win.svg');
+    animation-delay: -2.8s;
+}
+
+.platform.linux {
+    background-image: url('../images/linux.svg');
+    animation-delay: -1.8s;
+}
+
+.platform.android {
+    background-image: url('../images/android.svg');
+    animation-delay: -3.2s;
+}
+
+.platform:nth-child(3n + 3) {
+    margin-right: 0;
+}
+
+.vidWrapper {
+    position: relative;
+    height: 100%;
+}
+
+.videoWrapper {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 60px;
+    width: 80vw;
+    max-width: 640px;
+    height: 45vw;
+    max-height: 360px;
+}
+
+.videoOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url('../images/play@2x.png');
+    background-size: auto 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-color 0.2s, opacity 0.2s;
+    cursor: pointer;
+}
+
+.videoOverlay.hide, .videoOverlay.hide:hover {
+    opacity: 0;
+}
+
+.videoOverlay:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.videoWrapper video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+}
+
+.multividWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.multividWrapper .videoWrapper {
+    max-width: 40vw;
+    max-height: 22vw;
+}
+
+.multividWrapper .videoWrapper:first-of-type {
+    margin-right: 8px;
+}
+
+.vidCaptions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vidCaption {
+    text-align: center;
+    width: 50%;
+}
+
+.supporting p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+    font-family: 'SF Pro Display Light', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
+}
+
+.supporting p:last-of-type {
+    margin-bottom: 0;
+}
+
+#fpsSection .supportingTitle {
+    margin-bottom: 60px;
+}
+
+.triptych {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.triptych div {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.triptych div h4 {
+    margin-bottom: 10px;
+}
+
+.triptych div span {
+    font-family: 'SF Pro Display Light', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+pre {
+    background-color: #eeeeee;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 2px;
+}
+
+.wrapup {
+    background: #8e8e8e;
+}
+
+.margin60 {
+    margin: 60px auto;
+}
+
+.getStarted, .getStarted:hover, .getStarted:focus {
+    color: white;
+    background-color: #DD6F84;
+    padding: 8px 13px;
+    width: 200px;
+    text-align: center;
+    display: block;
+    font-family: 'SF Pro Display Light', 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.getStarted {
+    border-radius: 50px;
+}
+
+.getStarted:first-of-type {
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+.getStarted:hover {
+    filter: brightness(110%);
+}
+
+.getStarted.invert {
+    background-color: transparent;
+    color: #DD6F84;
+    border: 2px solid #DD6F84;
+}
+
+.startLinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: #eeeeee;
+    color: #888888;
+}
+
+p.contribute {
+    font-size: 16px;
+}
+
+p.contribute a:hover, p.contribute a:focus {
+    color: #FF8960;
+}
+
+#install .startLinks {
+    margin-top: 60px;
+}
+
+@media (min-width: 410px) {
+    .titleSection {
+        height: calc(100vh - 91px);
+    }
+}
+
+@media (min-width: 560px) {
+    .introImage video {
+        left: -25%;
+    }
+}
+
+@media (min-width: 600px) {
+    .platforms {
+        padding: 0 60px;
+        width: 100%;
+        max-width: 960px;
+        /*height: 220px;*/
+    }
+}
+
+@media (min-width: 690px) {
+    .introImage video {
+        left: 0;
+    }
+}
+
+
+@media (min-width: 768px) {
+    section h2 {
+        font-size: 46px;
+    }
+
+    .show-for-medium {
+        display: initial;
+    }
+
+    .hero, .intro, .detail {
+        flex-wrap: nowrap;
+    }
+
+    .heroText, .introText, .detailText {
+        width: 40%;
+        height: 100%;
+    }
+
+    .heroImage, .introImage, .detailImage {
+        width: 60%;
+        height: 100%;
+    }
+
+    .introImage video {
+        left: -15%;
+    }
+
+    .supportingTitle {
+        margin-bottom: 60px;
+    }
+
+    .platforms {
+        padding: 0 100px;
+        max-width: 940px;
+        margin: 0 auto 80px;
+    }
+
+    .platformsInner {
+        height: 60px;
+    }
+
+    .platform {
+        width: 60px;
+        height: 60px;
+        background-size: auto 40px;
+    }
+
+    .platform.xo {
+        background-size: 55px auto;
+    }
+
+    .triptych {
+        flex-wrap: nowrap;
+    }
+
+    .triptych div {
+        max-width: calc((100% / 3) - 10px);
+        flex-basis: calc((100% / 3) - 10px);
+        margin-right: 15px;
+        height: 300px;
+        text-align: center;
+    }
+
+    .triptych div h4 {
+        margin-bottom: 20px;
+    }
+
+    .triptych div span {
+        font-size: 18px;
+    }
+
+    .triptych div:last-child {
+        margin-right: 0;
+    }
+
+    /*.about {*/
+        /*flex-wrap: nowrap;*/
+        /*border-top: 1px solid #e5e8ed;*/
+    /*}*/
+
+    /*.topics {*/
+        /*width: 260px;*/
+        /*padding: 0 0 0 60px;*/
+    /*}*/
+
+    /*.content {*/
+        /*width: calc(100% - 260px);*/
+    /*}*/
+}
+
+@media (min-width: 992px) {
+    .slack-badge {
+        background-image: url('https://exoslack.now.sh/badge.svg');
+        background-size: 87px 20px;
+        background-repeat: no-repeat;
+        background-position: 20% center;
+    }
+
+    #main-nav {
+        background-color: #ffffff;
+    }
+
+    #main-nav .navbar-nav > li > a:hover,
+    #main-nav .navbar-nav > li > a:focus:hover {
+        color: #DD6F84;
+    }
+
+    #main-nav .navbar-nav > li > a, #main-nav .navbar-nav > li > a,
+    #main-nav .navbar-nav > li > a, #main-nav .navbar-nav > li > a:focus {
+        color: #000000;
+    }
+
+    .hide-for-lg {
+        display: none;
+    }
+
+    #main-nav.navbar-shrink .navbar-brand {
+        color: transparent;
+    }
+}
+
+@media (min-width: 1080px) {
+}
+
+@-webkit-keyframes opacitySwell {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.65;
+    }
+}
+
+@keyframes opacitySwell {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.65;
+    }
+}
+
+@keyframes floating {
+    from {
+        -webkit-transform: translateY(8px) rotate3d(0,0,1,3deg); transform:translateY(8px) rotate3d(0,0,1,3deg)
+    }
+    to {
+        -webkit-transform: translateY(-8px) rotate3d(0,0,1,0deg); transform:translateY(-8px) rotate3d(0,0,1,0deg)
+    }
+}
