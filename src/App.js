@@ -6,10 +6,10 @@ class App extends Component {
   render() {
     return (
       <div className="App" id="page-top" itemScope itemType="http://schema.org/ItemPage">
-        <nav className="siteNav" id="main-nav" itemScope itemType="http://schema.org/SiteNavigationElement" style={{position: 'absolute', display: 'flex', width: '100vw', padding: '0 30px', alignItems: 'center', zIndex: 1}}>
+        <nav className="siteNav" id="main-nav" itemScope itemType="http://schema.org/SiteNavigationElement" style={{position: 'absolute', display: 'flex', width: '100vw', padding: '0 30px', alignItems: 'center', zIndex: 2}}>
           <div style={{display: 'flex', height: '100px', marginRight: 'auto', alignItems: 'center'}}>
             <a className="navbar-brand js-scroll-trigger" href="/">
-              <img height={80} src="assets/images/logo.png"/>
+              <img height={80} src="assets/images/logo.png" alt="Exokit Browser"/>
             </a>
             <div className="navOptions" id="navbarResponsive" style={{display: 'flex', height: '100%'}}>
               <ul className="navList">
@@ -39,8 +39,11 @@ class App extends Component {
           </div>
         </nav>
 
-        <div style={{display: 'flex', position: 'absolute', width: '100vw', height: '100vh', justifyContent: 'center', alignItems: 'center'}}>
-          <h1 style={{margin: 0, padding: '30px', backgroundColor: '#000', color: '#FFF', fontSize: '24px', fontWeight: 300}}>A new web browser approaches</h1>
+        <div style={{display: 'flex', position: 'absolute', width: '100vw', height: '100vh', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', zIndex: 1}}>
+          <div style={{display: 'flex', padding: '30px', backgroundColor: '#000', flexDirection: 'column'}}>
+            <h1 style={{margin: 0, marginBottom: '20px', color: '#FFF', fontSize: '24px', fontWeight: 300}}>A new web browser approaches</h1>
+            <a className="download-button" href="//get.webmr.io">Download</a>
+          </div>
         </div>
 
         <video id="hero-video" autoPlay playsInline muted loop style={{width: '100vw', height: '100vh', objectFit: 'cover'}}>

@@ -117,6 +117,23 @@ a.slack-badge:active {
   border-bottom-color: currentColor;
 }
 
+.download-button {
+  display: flex;
+  padding: 10px;
+  color: #e81e62;
+  font-weight: 500;
+  border: 2px solid;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.download-button:hover {
+  color: #FFF;
+  background-color: #e81e62;
+  border-color: #e81e62;
+  text-decoration: none;
+}
+
 section {
     height: 100vh;
     min-height: 600px;
