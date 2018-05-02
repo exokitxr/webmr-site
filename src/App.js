@@ -40,15 +40,27 @@ class App extends Component {
         </nav>
 
         <div style={{display: 'flex', position: 'absolute', width: '100vw', height: '100vh', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', zIndex: 1}}>
-          <div style={{display: 'flex', padding: '30px', backgroundColor: '#000', flexDirection: 'column'}}>
-            <h1 style={{margin: 0, marginBottom: '20px', color: '#FFF', fontSize: '24px', fontWeight: 300}}>A new web browser approaches</h1>
-            <a className="download-button" href="//get.webmr.io">Download</a>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'stretch'}}>
+            <div style={{display: 'flex', padding: '30px', backgroundColor: '#000', color: '#FFF', flexDirection: 'column'}}>
+              <h1 style={{margin: 0, fontSize: '24px', fontWeight: 300}}>A new browser approaches</h1>
+            </div>
+            <div style={{display: 'flex', padding: '10px 30px', backgroundColor: '#F8F8F8', flexDirection: 'column'}}>
+              <p style={{color: '#333'}}>
+                <b><i>Exokit n.</i></b><br/>
+                Cannot draw a web page; draws layers of reality.<br/>
+                VR, Leap Motion, Magic Leap, keyboard.<br/>
+                <a href="//twitch.tv/avaer" className="hoverable"on>Made live on Twitch</a><br/>
+              </p>
+              <a className="download-button" href="//get.webmr.io" style={{marginBottom: '10px'}}>Download Free Unicorn</a>
+            </div>
           </div>
         </div>
 
-        <video id="hero-video" autoPlay playsInline muted loop style={{width: '100vw', height: '100vh', objectFit: 'cover'}}>
-          <source src="/assets/video/hero.mp4"/>
-        </video>
+        <div style={{position: 'relative', width: '100vw', height: '100vh', overflow: 'hidden'}}>
+          <video id="hero-video" autoPlay playsInline muted loop style={{width: '100%', height: '100%', objectFit: 'cover'}}>
+            <source src="/assets/video/hero.mp4"/>
+          </video>
+        </div>
 
         <section className="titleSection" id="exokit-header" itemScope itemType="http://schema.org/WebPageElement">
           <div id="particles-js"></div>

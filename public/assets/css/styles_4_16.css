@@ -59,6 +59,17 @@ a.slack-badge:active {
     color: transparent;
 }
 
+a.hoverable {
+  color: inherit;
+  // font-weight: 500;
+  text-decoration: underline;
+}
+
+a.hoverable:hover {
+  color: #e81e62;
+  text-decoration: underline;
+}
+
 .navbar-toggler:focus {
    outline: none;
     -webkit-appearance: none;
