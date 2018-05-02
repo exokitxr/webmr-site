@@ -6,15 +6,16 @@ class App extends Component {
   render() {
     return (
       <div className="App" id="page-top" itemScope itemType="http://schema.org/ItemPage">
-        <meta itemProp="additionalType" content="http://schema.org/WebPage" />
-        <nav className="siteNav" id="main-nav" itemScope itemType="http://schema.org/SiteNavigationElement">
-          <div className="container">
-            <a className="navbar-brand js-scroll-trigger" href="#page-top">Exokit Home</a>
-            <div className="navOptions" id="navbarResponsive">
+        <nav className="siteNav" id="main-nav" itemScope itemType="http://schema.org/SiteNavigationElement" style={{position: 'absolute', display: 'flex', width: '100vw', padding: '0 30px', alignItems: 'center', zIndex: 1}}>
+          <div style={{display: 'flex', height: '100px', marginRight: 'auto', alignItems: 'center'}}>
+            <a className="navbar-brand js-scroll-trigger" href="/">
+              <img height={80} src="assets/images/logo.png"/>
+            </a>
+            <div className="navOptions" id="navbarResponsive" style={{display: 'flex', height: '100%'}}>
               <ul className="navList">
                 <li className="navItem" itemProp="name">
                   <meta itemProp="description" content="Install Exokit" />
-                  <meta itemProp="potentialAction" content="https://exokitbrowser.com#install" />
+                  <meta itemProp="potential////Action" content="https://exokitbrowser.com#install" />
                   <a className="nav-link js-scroll-trigger" href="#install" itemProp="url">Install</a>
                 </li>
                 <li className="navItem" itemProp="name">
@@ -29,14 +30,22 @@ class App extends Component {
                   <meta itemProp="description" content="Twitch Channel" />
                   <a className="nav-link" href="https://www.twitch.tv/avaer" itemProp="url">Twitch</a>
                 </li>
-                <li className="navItem badgeItem" itemProp="name">
-                  <meta itemProp="description" content="Join Our Slack" />
-                  <a className="slack-badge nav-link" href="https://exoslack.now.sh" itemProp="url">Join the Slack</a>
-                </li>
               </ul>
             </div>
           </div>
+          <div className="navItem badgeItem" itemProp="name">
+            <meta itemProp="description" content="Join Our Slack" />
+            <a className="slack-badge nav-link" href="https://exoslack.now.sh" itemProp="url">Join the Slack</a>
+          </div>
         </nav>
+
+        <div style={{display: 'flex', position: 'absolute', width: '100vw', height: '100vh', justifyContent: 'center', alignItems: 'center'}}>
+          <h1 style={{margin: 0, padding: '30px', backgroundColor: '#000', color: '#FFF', fontSize: '24px', fontWeight: 300}}>A new web browser approaches</h1>
+        </div>
+
+        <video id="hero-video" autoPlay playsInline muted loop style={{width: '100vw', height: '100vh', objectFit: 'cover'}}>
+          <source src="/assets/video/hero.mp4"/>
+        </video>
 
         <section className="titleSection" id="exokit-header" itemScope itemType="http://schema.org/WebPageElement">
           <div id="particles-js"></div>
