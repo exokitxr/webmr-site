@@ -42,7 +42,7 @@ class App extends Component {
         <div style={{display: 'flex', position: 'absolute', width: '100vw', height: '100vh', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', zIndex: 1}}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'stretch'}}>
             <div style={{display: 'flex', padding: '30px', backgroundColor: '#000', color: '#FFF', flexDirection: 'column'}}>
-              <h1 style={{margin: 0, fontSize: '24px', fontWeight: 300}}>A new browser approaches</h1>
+              <h1 style={{margin: 0, fontSize: '24px', fontWeight: 300}}>A new browser approaches from the future</h1>
             </div>
             <div style={{display: 'flex', padding: '10px 30px', backgroundColor: '#F8F8F8', flexDirection: 'column'}}>
               <p style={{color: '#333'}}>
@@ -62,7 +62,7 @@ class App extends Component {
           </video>
         </div>
 
-        <section className="titleSection" id="exokit-header" itemScope itemType="http://schema.org/WebPageElement">
+        {/* <section className="titleSection" id="exokit-header" itemScope itemType="http://schema.org/WebPageElement">
           <div id="particles-js"></div>
           <h1 itemProp="description">
             <span>E<span className="xo-pink">x</span><span className="xo-orange">o</span>kit is a brand new, fast, post-screen era web browser.</span>
@@ -160,14 +160,11 @@ class App extends Component {
           &#169; Copyright 2018 WebMR
         </footer>
 
-        {/* <!-- Bootstrap core JavaScript --> */}
         <script src="/assets/vendor/jquery/jquery.min.js"></script>
         <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        {/* <!-- Plugin JavaScript --> */}
         <script src="/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-        {/* <!-- Custom scripts for this template --> */}
         <script src="/assets/js/new-age_4_16.min.js"></script>
         <script src="/assets/js/ui_4_15.js"></script>
         <script src="/assets/vendor/particles.min.js"></script>
@@ -285,7 +282,7 @@ class App extends Component {
           if (window.innerWidth >= 768) {
             particlesJS('particles-js', particlesConfig);
           }
-        `}</script>
+        `}</script> */}
       </div>
     );
   }
