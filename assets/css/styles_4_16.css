@@ -62,7 +62,7 @@ a.slack-badge:active {
 a.hoverable {
   color: inherit;
   // font-weight: 500;
-  // text-decoration: underline;
+  text-decoration: underline;
 }
 
 a.hoverable:hover {
