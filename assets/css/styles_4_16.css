@@ -1,20 +1,5 @@
-@font-face {
-    font-family:'SF Pro Display';
-    src: url('../fonts/SF-Pro-Display-Regular.otf');
-}
-
-@font-face {
-    font-family:'SF Pro Display Light';
-    src: url('../fonts/SF-Pro-Display-Light.otf');
-}
-
-@font-face {
-    font-family:'SF Pro Display Thin';
-    src: url('../fonts/SF-Pro-Display-Thin.otf');
-}
-
 html, *, *::before, *::after {
-    font-family: 'SF Pro Display', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Lato', 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
 .show-for-medium {
@@ -22,11 +7,12 @@ html, *, *::before, *::after {
 }
 
 #main-nav .navbar-brand {
-    color: transparent;
-    width: 108px;
-    height: 59px;
-    margin: 0 auto;
-    background-image: url('../images/exokit@2x.png');
+    padding: 10px 0;
+    // color: transparent;
+    // width: 108px;
+    // height: 59px;
+    // margin: 0 auto;
+    // background-image: url('../images/exokit@2x.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center center;
@@ -45,8 +31,8 @@ only screen and (   min--moz-device-pixel-ratio: 1.25),
 only screen and (     -o-min-device-pixel-ratio: 5/4),
 only screen and (        min-device-pixel-ratio: 1.25) {
     #main-nav .navbar-brand {
-        width: 54px;
-        height: 40px;
+        // width: 54px;
+        /// height: 40px;
     }
 }
 
@@ -58,11 +44,12 @@ only screen and (        min-device-pixel-ratio: 1.25) {
 .slack-badge {
     color: transparent !important;
     background-image: url('https://exoslack.now.sh/badge.svg');
-    background-size: 87px 20px;
+    // background-size: 87px 20px;
     background-repeat: no-repeat;
     background-position: center 65%;
-    width: 87px;
-    height: 23px;
+    // width: 87px;
+    // height: 23px;
+    padding: 0;
 }
 
 a.slack-badge,
@@ -72,19 +59,32 @@ a.slack-badge:active {
     color: transparent;
 }
 
+a.hoverable {
+  color: inherit;
+  // font-weight: 500;
+  // text-decoration: underline;
+}
+
+a.hoverable:hover {
+  color: #e81e62;
+  text-decoration: underline;
+}
+
 .navbar-toggler:focus {
    outline: none;
     -webkit-appearance: none;
 }
 
 .siteNav {
-    padding-top: 10px;
+  background-color: #FFF;
+  padding-top: 10px;
 }
 
 .siteNav .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
 }
 
 .navList {
@@ -101,22 +101,48 @@ a.slack-badge:active {
     text-align: center;
 }
 
-.nav-link:not(.badgeItem) {
-    padding: 0 0 0 0;
-}
-
 .navItem {
-    padding: 8px;
+  height: 100%;
 }
 
-.navList li a:not(.slack-badge) {
+.navItem a {
+  display: flex;
+  height: 100%;
+  padding: 0 8px;
+  font-size: 22px;
+  // font-weight: 600;
+  align-items: center;
+}
+
+.navList li a {
     color: black;
     text-transform: lowercase;
     font-variant: small-caps;
-    font-size: 18px;
-    font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
-    font-weight: 300;
-    margin-top: -2px;
+    // font-size: 18px;
+    // font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
+    border-bottom: 5px solid transparent;
+}
+
+.navList li a:hover {
+  color: #e81e62;
+  border-bottom-color: currentColor;
+}
+
+.download-button {
+  display: flex;
+  padding: 15px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #e81e62;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.download-button:hover {
+  color: #FFF;
+  background-color: #ad1457;
+  text-decoration: none;
 }
 
 section {
@@ -129,7 +155,7 @@ section {
 
 section h2 {
     font-size: 40px;
-    font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
+    // font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
     font-weight: 300;
     line-height: 1.5;
 }
@@ -149,7 +175,7 @@ section h2 {
 
 .titleSection h1 span {
     font-weight: 400;
-    font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
+    // font-family: 'SF Pro Display Thin', 'Helvetica', 'Arial', sans-serif;
     letter-spacing: 0.03em;
 }
 
