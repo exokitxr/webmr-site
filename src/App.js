@@ -42,16 +42,16 @@ class App extends Component {
         <div style={{display: 'flex', position: 'absolute', width: '100vw', height: '100vh', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', zIndex: 1}}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'stretch'}}>
             <div style={{display: 'flex', padding: '30px', backgroundColor: '#000', color: '#FFF', flexDirection: 'column'}}>
-              <h1 style={{margin: 0, fontSize: '24px', fontWeight: 300}}>A new browser approaches from the future</h1>
+              <h1 style={{margin: 0, fontSize: '24px', fontWeight: 300}}>A new browser approaches</h1>
             </div>
             <div style={{display: 'flex', padding: '10px 30px', backgroundColor: '#F8F8F8', flexDirection: 'column'}}>
               <p style={{color: '#333'}}>
                 <b><i>Exokit n.</i></b><br/>
                 Cannot draw a web page; draws layers of reality.<br/>
-                VR, Leap Motion, Magic Leap, keyboard.<br/>
+                VR, Leap Motion, Magic Leap, keyboard. Faster than Chrome.<br/>
                 <a href="//twitch.tv/avaer" className="hoverable"on>Made live on Twitch</a><br/>
               </p>
-              <a className="download-button" href="//get.webmr.io" style={{marginBottom: '10px'}}>Download Free Unicorn</a>
+              <a className="download-button" href="//get.webmr.io" style={{marginBottom: '10px', textTransform: 'uppercase'}}>Download 💗🦄</a>
             </div>
           </div>
         </div>
