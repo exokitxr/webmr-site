@@ -30,7 +30,7 @@ class Link extends Component {
         flexDirection: 'column',
         textDecoration: 'none',
         cursor: 'pointer',
-        transform: !this.state.hover ? 'none' : 'scale(1.1, 1.1)',
+        // transform: !this.state.hover ? 'none' : 'scale(1.1, 1.1)',
       }}
       onMouseOver={() => this.setState({hover: true})}
       onMouseOut={() => this.setState({hover: false})}
