@@ -2,11 +2,79 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 
+const REGISTRY_URL = 'http://zeovr.io:9000';
+
+class Link extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      hover: false,
+    };
+  }
+
+  render() {
+    return <a
+      href={this.props.link}
+      style={{
+        display: 'flex',
+        width: '180px',
+        height: '180px',
+        margin: '10px',
+        color: '#FFF',
+        fontSize: '13px',
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+        whiteSpace: 'nowrap',
+        flexDirection: 'column',
+        textDecoration: 'none',
+        cursor: 'pointer',
+      }}
+      onMouseOver={() => this.setState({hover: true})}
+      onMouseOut={() => this.setState({hover: false})}
+    >
+      <div style={{
+        backgroundColor: !this.state.hover ? '#000' : '#01a9f4',
+        flexGrow: 1,
+      }}/>
+      <div style={{
+        backgroundColor: !this.state.hover ? '#000' : '#01a9f4',
+        padding: '10px',
+      }}>
+        {this.props.link}
+      </div>
+    </a>;
+  }
+}
+
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      links: [],
+    };
+
+    fetch(REGISTRY_URL)
+      .then(res => {
+        if (res.ok) {
+          return res.json();
+        } else {
+          return Promise.reject(new Error('invalid status code: ' + res.status));
+        }
+      })
+      .then(links => {
+        this.setState({links});
+      })
+      .catch(err => {
+        console.warn(err.stack);
+      });
+  }
+
   render() {
     return (
-      <div className="App" id="page-top" itemScope itemType="http://schema.org/ItemPage">
-        <nav className="siteNav" id="main-nav" itemScope itemType="http://schema.org/SiteNavigationElement" style={{position: 'absolute', display: 'flex', width: '100vw', padding: '0 30px', alignItems: 'center', zIndex: 2}}>
+      <div className="App" id="page-top" itemScope itemType="http://schema.org/ItemPage" style={{display: 'flex', flexDirection: 'column'}}>
+        <nav className="siteNav" id="main-nav" itemScope itemType="http://schema.org/SiteNavigationElement" style={{position: 'absolute', display: 'flex', width: '100%', padding: '0 30px', alignItems: 'center', zIndex: 2}}>
           <div style={{display: 'flex', height: '100px', marginRight: 'auto', alignItems: 'center'}}>
             <a className="navbar-brand js-scroll-trigger" href="/">
               <img height={80} src="assets/images/logo.png" alt="Exokit Browser"/>
@@ -39,7 +107,7 @@ class App extends Component {
           </div>
         </nav>
 
-        <div style={{display: 'flex', position: 'absolute', width: '100vw', height: '100vh', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', zIndex: 1}}>
+        <div style={{display: 'flex', position: 'absolute', width: '100%', height: '100vh', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', zIndex: 1}}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'stretch'}}>
             <div style={{display: 'flex', padding: '30px', backgroundColor: '#000', color: '#FFF', flexDirection: 'column'}}>
               <h1 style={{margin: 0, fontSize: '24px', fontWeight: 300}}>A new browser approaches</h1>
@@ -49,18 +117,24 @@ class App extends Component {
                 <b><i>Exokit n.</i></b><br/>
                 Cannot draw a web page; draws layers of reality.<br/>
                 VR, Leap Motion, Magic Leap, keyboard. Faster than Chrome.<br/>
-                <a href="//twitch.tv/avaer" className="hoverable"on>Made live on Twitch</a><br/>
+                <a href="//twitch.tv/avaer" className="hoverable">Made live on Twitch</a><br/>
               </p>
-              <a className="download-button" href="//get.webmr.io" style={{marginBottom: '10px', textTransform: 'uppercase'}}>Download 💗🦄</a>
+              <a className="download-button" href="//get.webmr.io" style={{marginBottom: '10px', textTransform: 'uppercase'}}>Download <span role="img" aria-label="heart">💗</span><span role="img" aria-label="unicorn">🦄</span></a>
             </div>
           </div>
         </div>
 
-        <div style={{position: 'relative', width: '100vw', height: '100vh', overflow: 'hidden'}}>
+        <div style={{position: 'relative', width: '100%', height: '100vh', overflow: 'hidden'}}>
           <video id="hero-video" autoPlay playsInline muted loop style={{width: '100%', height: '100%', objectFit: 'cover'}}>
             <source src="/assets/video/hero.mp4"/>
           </video>
         </div>
+
+        <section style={{display: 'flex', justifyContent: 'center'}}>
+          <div style={{display: 'flex', width: '800px', flexWrap: 'wrap'}}>
+            {this.state.links.map(link => <Link link={link} key={link} />)}
+          </div>
+        </section>
 
         {/* <section className="titleSection" id="exokit-header" itemScope itemType="http://schema.org/WebPageElement">
           <div id="particles-js"></div>

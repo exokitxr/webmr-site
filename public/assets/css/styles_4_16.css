@@ -1,5 +1,9 @@
 html, *, *::before, *::after {
-    font-family: 'Lato', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Lato', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .show-for-medium {
@@ -148,7 +152,7 @@ a.hoverable:hover {
 section {
     height: 100vh;
     min-height: 600px;
-    width: 100vw;
+    width: 100%;
     padding: 0 0 0 0;
     position: relative;
 }
