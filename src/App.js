@@ -107,7 +107,7 @@ class App extends Component {
           </div>
         </nav>
 
-        <div style={{display: 'flex', position: 'absolute', width: '100%', height: '100vh', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', zIndex: 1}}>
+        <div style={{display: 'flex', position: 'absolute', width: '100%', height: '100vh', paddingTop: '100px', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', zIndex: 1}}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'stretch'}}>
             <div style={{display: 'flex', padding: '30px', backgroundColor: '#000', color: '#FFF', flexDirection: 'column'}}>
               <h1 style={{margin: 0, fontSize: '24px', fontWeight: 300}}>A new browser approaches</h1>
