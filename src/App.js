@@ -21,6 +21,7 @@ class Link extends Component {
         width: '180px',
         height: '180px',
         margin: '10px',
+        backgroundColor: !this.state.hover ? '#000' : '#e81e62',
         color: '#FFF',
         fontSize: '13px',
         overflow: 'hidden',
@@ -29,16 +30,15 @@ class Link extends Component {
         flexDirection: 'column',
         textDecoration: 'none',
         cursor: 'pointer',
+        transform: !this.state.hover ? 'none' : 'scale(1.1, 1.1)',
       }}
       onMouseOver={() => this.setState({hover: true})}
       onMouseOut={() => this.setState({hover: false})}
     >
       <div style={{
-        backgroundColor: !this.state.hover ? '#000' : '#01a9f4',
         flexGrow: 1,
       }}/>
       <div style={{
-        backgroundColor: !this.state.hover ? '#000' : '#01a9f4',
         padding: '10px',
       }}>
         {this.props.link}
@@ -130,9 +130,9 @@ class App extends Component {
           </video>
         </div>
 
-        <section style={{display: 'flex', flexDirection: 'column'}}>
+        <section style={{display: 'flex', backgroundImage: 'linear-gradient(to right, #00f260, #0575e6)', flexDirection: 'column'}}>
           <div style={{display: 'flex', justifyContent: 'center'}}>
-            <h1 style={{display: 'flex', margin: '70px 0', padding: '20px 0', borderBottom: '2px solid #000', fontWeight: 300}}>Made for exokit</h1>
+            <h1 style={{display: 'flex', margin: '70px 0', padding: '15px', backgroundColor: '#000', color: '#FFF', fontWeight: 300}}>Made for exokit</h1>
           </div>
           <div style={{display: 'flex', justifyContent: 'center'}}>
             <div style={{display: 'flex', width: '800px', flexWrap: 'wrap'}}>
