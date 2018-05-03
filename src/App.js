@@ -130,9 +130,14 @@ class App extends Component {
           </video>
         </div>
 
-        <section style={{display: 'flex', justifyContent: 'center'}}>
-          <div style={{display: 'flex', width: '800px', flexWrap: 'wrap'}}>
-            {this.state.links.map(link => <Link link={link} key={link} />)}
+        <section style={{display: 'flex', flexDirection: 'column'}}>
+          <div style={{display: 'flex', justifyContent: 'center'}}>
+            <h1 style={{display: 'flex', margin: '70px 0', padding: '20px 0', borderBottom: '2px solid #000', fontWeight: 300}}>Made for exokit</h1>
+          </div>
+          <div style={{display: 'flex', justifyContent: 'center'}}>
+            <div style={{display: 'flex', width: '800px', flexWrap: 'wrap'}}>
+              {this.state.links.map(link => <Link link={link} key={link} />)}
+            </div>
           </div>
         </section>
 

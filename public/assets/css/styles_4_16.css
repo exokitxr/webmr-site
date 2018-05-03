@@ -150,8 +150,6 @@ a.hoverable:hover {
 }
 
 section {
-    height: 100vh;
-    min-height: 600px;
     width: 100%;
     padding: 0 0 0 0;
     position: relative;
