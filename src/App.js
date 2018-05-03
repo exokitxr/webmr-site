@@ -18,15 +18,12 @@ class Link extends Component {
       href={this.props.link}
       style={{
         display: 'flex',
-        width: '180px',
-        height: '180px',
+        width: '160px',
+        height: '160px',
         margin: '10px',
         backgroundColor: !this.state.hover ? '#000' : '#e81e62',
         color: '#FFF',
         fontSize: '13px',
-        overflow: 'hidden',
-        textOverflow: 'ellipsis',
-        whiteSpace: 'nowrap',
         flexDirection: 'column',
         textDecoration: 'none',
         cursor: 'pointer',
@@ -40,6 +37,9 @@ class Link extends Component {
       }}/>
       <div style={{
         padding: '10px',
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+        whiteSpace: 'nowrap',
       }}>
         {this.props.link}
       </div>
@@ -135,7 +135,7 @@ class App extends Component {
             <h1 style={{display: 'flex', margin: '70px 0', padding: '15px', backgroundColor: '#000', color: '#FFF', fontWeight: 300}}>Made for exokit</h1>
           </div>
           <div style={{display: 'flex', justifyContent: 'center'}}>
-            <div style={{display: 'flex', width: '800px', flexWrap: 'wrap'}}>
+            <div style={{display: 'flex', width: '720px', flexWrap: 'wrap'}}>
               {this.state.links.map(link => <Link link={link} key={link} />)}
             </div>
           </div>
