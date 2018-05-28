@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 
 const REGISTRY_URL = 'http://zeovr.io:9000';
 
@@ -119,7 +119,32 @@ class App extends Component {
                 VR, Leap Motion, Magic Leap, keyboard. Faster than Chrome.<br/>
                 <a href="//twitch.tv/avaer" className="hoverable">Made live on Twitch</a><br/>
               </p>
-              <a className="download-button" href="//get.webmr.io" style={{marginBottom: '10px', textTransform: 'uppercase'}}>Download <span role="img" aria-label="heart">💗</span><span role="img" aria-label="unicorn">🦄</span></a>
+                <div className='row'>
+                  <div className='col-4'>
+                      <a id="apple-download-button" className="download-button" href="//get.webmr.io/macos">
+                          <div className='row'>
+                              <div className='col-12'><img src={'assets/images/apple.png'}/></div>
+                              <div className='col-12'>macOS</div>
+                          </div>
+                      </a>
+                  </div>
+                    <div className='col-4'>
+                        <a id="windows-download-button" className="download-button" href="//get.webmr.io/windows">
+                            <div className='row'>
+                                <div className='col-12'><img src={'assets/images/windows.png'}/></div>
+                                <div className='col-12'>Windows</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div className='col-4'>
+                        <a id="linux-download-button" className="download-button" href="//get.webmr.io/linux">
+                            <div className='row'>
+                                <div className='col-12'><img src={'assets/images/linux.png'}/></div>
+                                <div className='col-12'>Linux</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
